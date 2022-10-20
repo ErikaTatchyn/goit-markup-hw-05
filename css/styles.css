@@ -108,7 +108,7 @@ img {
 .current::after {
   content: "";
   position: absolute;
-  bottom: -34px;
+  bottom: -33px;
   left: 0;
   background-color: var(--accent-color);
   border-radius: 2px;
@@ -189,7 +189,8 @@ img {
   border-radius: 4px;
   border: transparent;
   transition: color var(--transition-dur-and-func),
-    background-color var(--transition-dur-and-func);
+    background-color var(--transition-dur-and-func),
+    box-shadow var(--transition-dur-and-func);
 }
 
 .button:hover,
@@ -228,7 +229,6 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   padding: 6px 22px;
-  transition: box-shadow var(--transition-dur-and-func);
 }
 
 .filter-button:hover,
@@ -584,5 +584,6 @@ img {
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  cursor: pointer;
   transition: border-color var(--transition-dur-and-func);
 }
